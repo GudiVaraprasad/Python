@@ -1,0 +1,88 @@
+data= [11,12,10,5,1,0,8]
+data
+output is [11,12,10,5,1,0,8]
+
+data[1]
+output is 12
+
+data[1:]
+output is [12,10,5,1,0,8]
+
+//  All these operations and tricks are same as the before like we did in "Variables in Python"
+//  A list in python can also be treated as an array in python or similar to any other language (List is mutable)
+
+names=['python','java','ruby','javascript']
+names
+output is ['python','java','ruby','javascript']
+
+values=[1.25,0.00,'python','@#$',5]
+values
+output is [1.25,0.00,'python','@#$',5]
+
+mydata=[data,names,values]
+mydata
+output is [[11,12,10,5,1,0,8],['python','java','ruby','javascript'],[1.25,0.00,'python','@#$',5]]
+
+// List in python is mutable (you can change a single character or characters and replace with new one)
+
+// use Ctrl+Space key to get a pop up when you type data.    // this popup will show you some methods
+
+data.append(20)
+data
+output is [11,12,10,5,1,0,8,20]     // 20 gets added to the list at the end
+
+data.insert(2,99)
+data
+output is [11,12,99,10,5,1,0,8,20]       // 99 gets inserted at the 2nd index....it is not replaced just got inserted at 2nd index
+
+data.remove(5)
+data
+output is [11,12,10,1,0,8,20]         // element 5 gets removed from the list
+
+data.pop(2)
+output is 10
+data
+output is  [11,12,1,0,8,20]           // element 10 gets removed from the list as we used .pop(  ) before this
+
+
+data.pop()
+output is 20
+data
+output is [11,12,1,0,8]               // without specifying index number .pop() excecutes to remove the last element in the list
+                                          (for more details about this refer the concept of Stacks in Data Structures)
+                                          
+                                          
+del data[3:]
+data
+output is [11,12,1]                   //  del is used to delete multiple characters at a time specifing index number
+
+
+data.extend([42,74,10.8,12.5])
+TypeError: extend() takes only arguements......
+
+// So, use [] inside ()
+
+data.extend([42,74,10.8,12.5])
+data
+output is [11,12,1,42,74,10.8,12.5]          // .extend() helps to add the required elements in the list data at the end in continuation
+
+// Some in-built functions
+
+min(data)                           // find minimum value in list
+output is 1
+
+max(data)                           // find maximum value in list
+output is 74
+
+sum(data)                          // find Sum of all the elements in the list
+output is 163.30
+
+data.sort()
+data                                   // sorts all the elements in the list in ascending order
+output is [1,10.8,11,12,12.5,42,74]  
+
+
+ // Quiz question
+name="Hello Friends"
+print(name[-4])
+output=??                        // Quiz question  {Ans= e}
