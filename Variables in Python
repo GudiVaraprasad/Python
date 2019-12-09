@@ -1,0 +1,56 @@
+// we can directly assign value to the variables irrespective of datatype
+x=3
+y=2
+
+x
+output is 3
+
+x+y
+output is 5
+
+x=9
+x+y     // the new value of x is replaced with 3
+output is 12
+
+_+y      // here _ is used to take the value of previous output
+output is 14
+
+name='python'
+name+'code'
+output is 'python code'
+
+name='python'
+name[1]       // the characters get stored in array and here 1 is index of array.....It's all pre-defined
+output is 'y'
+
+name='python'
+name[-2]       // the characters get stored in array and here -2 is index of array from end.....It's all pre-defined
+output is 'o'
+
+name='python'
+name[0:2]       // the characters get stored in array and characters from 0th index upto 2nd index gets printed(2nd index is not included)
+output is 'py'
+
+name='python'
+name[2:]       // the characters get stored in array and characters from 2nd index upto end
+output is 'thon'
+
+name='python'   // first four characters
+name[:4]       // the characters get stored in array and characters from 0th index upto 4th index (4th index is not included)
+output is 'pyth'
+
+// Strings in python are immutable (you can't even change a single character)
+
+// but, if 
+name='python code'
+print('java' + name[7:])
+output is 'javacode'
+print('java ' + name[7:])
+output is 'java code'
+
+name='python code'
+len(name)       // pre-defined method to find length of string 
+output is 11      // space is also counted
+
+print(r'Hello \n Friends')
+output=??    // Quiz Question
