@@ -1,0 +1,15 @@
+In Python IDLE, 
+type  help()
+click enter
+
+it will display you
+help>
+
+Search..... Topics
+It will show you list of topics u can refer this for any help
+
+example: type LISTS
+It will show you all the stuff related to LISTS (which we have learnt earlier)
+
+
+*********************** So, use help() command for any help ************************
