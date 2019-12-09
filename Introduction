@@ -1,0 +1,53 @@
+// Download Python : https://www.python.org/downloads/
+// Download PyCharm : https://www.jetbrains.com/pycharm/download/#section=windows
+
+// After Installing and opening Python IDE,
+
+// Basic mathematical operations like +, -, *, /, %, //, ^, ** 
+// These will work directly irrespective of synatx or skeleton of java in the compiler.
+
+10//3 output is 3 (integer division)
+
+2*2*2*2 is also written as 2**4 output is 16
+
+10/3 output is 3.33333333335 (actual division)
+
+10%3 output is 1 (remainder)
+
+// We can use some pre-defined fuctions or own functions to code
+
+print('python') output is python
+just simply 'python' output is 'python'
+
+use " " for group of strings or characters
+example : "python's code"
+
+print("hello world")
+output: 'hello world'
+
+the string part must be different from outside part
+example : print('"python" code') here python is highlited
+output is "python" code
+
+but when u want to print ram's and highlighted one
+we use \ backslash which will ignore the special character next to it.
+print('ram\'s "python code"')
+output is: ram's "python code"
+
+// print python 5 times
+5*'python'
+output: pythonpythonpythonpythonpython
+
+print('c:\docs:\navin')  // here \n has new meaning it will move to new line
+output: c:\docs:
+        avin
+         
+print(r'c:\docs:\navin')    // here r means raw string...it will consider whole thing as one and do
+output: c:\docs:\navin
+
+
+
+
+
+
+ 
