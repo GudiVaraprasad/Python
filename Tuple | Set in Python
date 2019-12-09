@@ -1,0 +1,127 @@
+//  A tuple in Python is similar to a list. The difference between the two is that we cannot change the elements
+    of a tuple once it is assigned whereas, in a list, elements can be changed.
+
+
+// Tuples are used to group together related data, such as a person's name, their age, and their gender. 
+// An assignment to all of the elements in a tuple using a single assignment statement. 
+// Tuple assignment occurs simultaneously rather than in sequence, making it useful for swapping values.
+
+// A tuple is created by placing all the items (elements) inside parentheses (), separated by commas.
+// A tuple can have any number of items and they may be of different types (integer, float, list, string, etc.)
+
+
+
+# Empty tuple
+my_tuple = ()
+print(my_tuple)  # Output: ()
+
+# Tuple having integers
+my_tuple = (1, 2, 3)
+print(my_tuple)  # Output: (1, 2, 3) 
+
+# tuple with mixed datatypes
+my_tuple = (1, "Hello", 3.4)
+print(my_tuple) 
+# Output: (1, "Hello", 3.4)  
+
+# nested tuple
+my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+# Output: ("mouse", [8, 4, 6], (1, 2, 3)) 
+print(my_tuple)
+
+// A tuple can also be created without using parentheses. This is known as tuple packing.
+
+my_tuple = 3, 4.6, "dog"
+print(my_tuple)   
+# Output: 3, 4.6, "dog" 
+
+# tuple unpacking is also possible
+a, b, c = my_tuple
+print(a)      #output: 3
+print(b)      #output:  4.6 
+print(c)      # dog 
+
+
+// Creating a tuple with one element is a bit tricky.
+// Having one element within parentheses is not enough. We will need a trailing comma to indicate that it is, in fact, a tuple.
+
+my_tuple = ("hello")
+print(type(my_tuple))  # <class 'str'>
+
+# Creating a tuple having one element
+my_tuple = ("hello",)  
+print(type(my_tuple))  # <class 'tuple'> 
+
+# Parentheses is optional
+my_tuple = "hello",
+print(type(my_tuple))  # <class 'tuple'> 
+
+
+// Access Tuple Elements
+
+1. Indexing
+We can use the index operator [] to access an item in a tuple where the index starts from 0.
+my_tuple[0]    #output: 'p'
+
+# nested tuple
+n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
+# nested index
+print(n_tuple[0][3])       #output: 's'
+print(n_tuple[1][1])       #output: '4'
+
+// Unlike lists, tuples are immutable.
+
+my_tuple = (4, 2, 3, [6, 5])
+
+
+# TypeError: 'tuple' object does not support item assignment
+# my_tuple[1] = 9
+
+# However, item of mutable element can be changed
+my_tuple[3][0] = 9    # Output: (4, 2, 3, [9, 5])
+print(my_tuple)
+
+# Tuples can be reassigned
+my_tuple = ('p','r','o','g','r','a','m','i','z')
+print(my_tuple)
+# Output: ('p', 'r', 'o', 'g', 'r', 'a', 'm', 'i', 'z')
+
+my_tuple = ('a','p','p','l','e',)
+print(my_tuple.count('p'))       # Output: 2
+print(my_tuple.index('l'))       # Output: 3
+
+
+
+
+// SET in Python
+set() method is used to convert any of the iterable to the distinct element and sorted sequence of iterable elements, 
+commonly called Set.
+
+
+# Python3 code to demonstrate the 
+# working of set() on list and tuple 
+
+# initializing list 
+lis1 = [ 3, 4, 1, 4, 5 ] 
+
+# initializing tuple 
+tup1 = (3, 4, 1, 4, 5) 
+
+# Printing iterables before conversion 
+print("The list before conversion is : " + str(lis1)) 
+print("The tuple before conversion is : " + str(tup1)) 
+
+# Iterables after conversion are 
+# notice distinct and sorted elements 
+
+print("The list after conversion is : " + str(set(lis1))) 
+print("The tuple after conversion is : " + str(set(tup1))) 
+
+#OUTPUT:
+The list before conversion is : [3, 4, 1, 4, 5]
+The tuple before conversion is : (3, 4, 1, 4, 5)
+The list after conversion is : {1, 3, 4, 5}
+The tuple after conversion is : {1, 3, 4, 5}
+
+
+
