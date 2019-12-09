@@ -11,6 +11,11 @@ It will show you list of topics u can refer this for any help
 example: type LISTS
 It will show you all the stuff related to LISTS (which we have learnt earlier)
 
+To go back to the Python IDLE or prompt use 
+type       quit
+click enter
+# you are back now #
+
 
 *********************** So, use help() command for any help ************************
 
@@ -21,3 +26,5 @@ It will show you all the stuff related to LISTS (which we have learnt earlier)
 // Youtube Tutorials: https://www.youtube.com/watch?v=hEgO047GxaQ&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3
 
 Contact for further clarifications or doubts : gudi.varaprasad@gmail.com
+
+
