@@ -1,0 +1,58 @@
+let us check what there behind this...
+when you assign a=5, the object gets created in the memory. This has certain address 
+
+a=5
+id(a)
+output is 1507379184    ------> this is the address of the object
+
+s='python'                              // It is also valid for strings
+id(s)
+output is 23235456
+suppose .... 
+a=8
+b=a
+id(a)
+output is 1507379232
+id(b)
+output is 1507379232            ------> you can observe that the address of a and b are the same that means in simple words,
+                                        a and b have same data so they are pointing towards same object located in the memory....
+                                        that where python is more memory efficient
+ you can also know address of this by,
+ id(8)
+output is 1507379232
+
+now change the value of a,,
+a=7
+id(a)
+output is 1507379216
+id(b)                                    // you can observe that the address of a and b are different as b has same id before assigned                                          
+1507379232                                  to a (b=a)...now the value of a is changed so address changed....but b willnot vary as the
+                                            assigned value for b is still old a (b=8)
+lets change the value of b
+b=3
+id(b)
+output is 1507379152
+now the memory is used for 10 and nothing is assigned to it...but it got stored in the memory
+this is the concept of "Garbage collection" in python
+
+some universal constants like PI are used in python and these values cannot be channged....
+PI=3.14
+PI
+output is 3.14
+
+type(PI)                             // You can find the data type of any object using < type(<variable>) >
+output is <class 'float'>              
+type(s)
+output is <class 'str'>
+
+
+
+Quiz Question :  How is set different from list in python ..??
+Answer : 
+set is collection of unique elements, like in list if you repeat something i.e some number like 12 then it is repeated again,
+but in sets if you write 12 number 2 times then it will display only once, so this is 1st one. 2nd one is set is working on 
+concept of hash, where list not working on concept of hash! 3rd one is in sets index number is not working, because sets can't 
+maintain sequence, but list maintain sequence, eo index number is working in list! So these are some of difference between 
+set and list! 
+
+
