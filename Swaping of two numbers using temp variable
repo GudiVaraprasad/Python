@@ -1,0 +1,10 @@
+# Write Python 3 code for Swaping of two numbers using temp variable.
+
+x=int(input("Enter first number: "))
+y=int(input("Enter second number: "))
+temp=0
+temp=x
+x=y
+y=temp
+print("First number is:",x)
+print("Second number is:",y)
