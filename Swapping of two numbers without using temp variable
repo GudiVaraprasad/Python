@@ -1,0 +1,8 @@
+# Write Python 3 code for swapping of two numbers without using temp variable.
+x=int(input("Enter first number: "))
+y=int(input("Enter second number: "))
+x=x+y
+y=x-y
+x=x-y
+print("First number is:",x)
+print("Second number is:",y)
