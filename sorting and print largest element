@@ -1,0 +1,9 @@
+# Write Python 3 code for sorting and print largest element
+
+a=[]
+n=int(input("Enter size of array:"))
+for i in range(0,n):
+    b=int(input())
+    a.append(b)
+a.sort()
+print("Second largest element is:",a[n-1])
