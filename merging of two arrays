@@ -1,0 +1,26 @@
+# Write Python 3 code for merging of two arrays
+
+array=[]
+array1=[]
+array2=[]
+n1=int(input("Enter size of array1:"))
+n2=int(input("Enter size of array2:"))
+n=n1+n2
+for i in range(0,n1):
+    b1=int(input())
+    array1.append(b1)
+for i in range(0,n2):
+    b2=int(input())
+    array2.append(b2)
+array=array1+array2
+temp=0
+for i in range(0,n):
+    for j in range(i+1,n):
+        if array[i]<array[j]:
+            temp=array[i]
+            array[i]=array[j]
+            array[j]=temp
+        else:
+            continue
+
+print("smallest element is:",temp)
