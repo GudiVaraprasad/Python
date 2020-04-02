@@ -1,0 +1,31 @@
+for i in range(1,4):
+  print(i)
+  
+#Output:
+1
+2
+3
+4
+
+
+for i in range(4):
+  print(i)
+  
+#Output:
+0
+1
+2
+3
+4
+
+
+for i in range(4):
+  print(i, end="")
+  
+#Output: 01234
+
+
+for i in range(4):
+  print(i, end=" ")
+  
+#Output: 0 1 2 3 4
