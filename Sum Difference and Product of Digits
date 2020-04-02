@@ -1,0 +1,22 @@
+def Sum(n):
+    sum = 0
+    while (n != 0):
+        sum = sum + int(n % 10) 
+        n = int(n/10) 
+    return sum
+def Diff(n):
+    diff = 0
+    while (n != 0):
+        diff = diff - int(n % 10) 
+        n = int(n/10) 
+    return diff
+def Mul(n):
+    mul=1
+    while (n != 0):
+        mul = mul * int(n % 10) 
+        n = int(n/10) 
+    return mul
+n = int(input("Enter: "))
+print(Sum(n))
+print(Diff(n))
+print(Mul(n))
