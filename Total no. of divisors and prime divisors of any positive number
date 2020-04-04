@@ -1,0 +1,40 @@
+# Total Divisors
+def divCount(n): 
+	hh = [1] * (n + 1) 
+	p = 2 
+	while((p * p) < n): 
+		if (hh[p] == 1): 
+			for i in range((p * 2), n, p): 
+				hh[i] = 0 
+		p += 1 
+	total = 1 
+	for p in range(2, n + 1): 
+		if (hh[p] == 1): 
+			count = 0 
+			if (n % p == 0): 
+				while (n % p == 0): 
+					n = int(n / p) 
+					count += 1; 
+				total *= (count + 1)
+	return total;
+
+n =int(input("Enter any positive number : "))
+print("Total no. of divisors of",n,"are: ")
+print(divCount(n))
+
+# Total Prime Divisors
+flag=0
+i=1
+while(i<=n):
+    k=0
+    if(n%i==0):
+        j=1
+        while(j<=i):
+            if(i%j==0):
+                k=k+1
+            j=j+1
+        if(k==2):
+            flag=flag+1
+    i=i+1
+print("Total no. of prime divisors of",n,"are: ")
+print(flag)
